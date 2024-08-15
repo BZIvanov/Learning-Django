@@ -21,6 +21,7 @@ Here is a list of recommended extensions:
 - **Python** from Microsoft
 - **Pylance** from Microsoft
 - **Black Formatter** from Microsoft - check the extension description to read how to enable the formatting for python files.
+- **Django** from Baptiste Darthenay - useful, if working with html templates
 
 ## Starting a new project
 

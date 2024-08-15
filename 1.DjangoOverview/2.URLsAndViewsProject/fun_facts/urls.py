@@ -18,8 +18,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# include our apps to the project so Django knows for their existence
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("math-facts/", include("math_facts.urls")),
     path("seasonal-facts/", include("seasonal_facts.urls")),
+    path("nature-facts/", include("nature_facts.urls")),
 ]

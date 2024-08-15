@@ -15,3 +15,4 @@ List of URLs to test with:
 - `http://localhost:8000/seasonal-facts/234` - Not Found response
 - `http://localhost:8000/seasonal-facts/summer` - display plain text
 - `http://localhost:8000/seasonal-facts/spring` - display plain text
+- `http://localhost:8000/nature-facts/mountains` - template variable in html file
