@@ -1,6 +1,6 @@
-# Initial App
+# Initial Project
 
-This demo is demonstrating how the new app looks like.
+This demo is demonstrating how a new project looks like.
 
 ## Initial project structure
 
