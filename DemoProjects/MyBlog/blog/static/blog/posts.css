@@ -1,0 +1,9 @@
+#posts-section > h2 {
+  text-align: center;
+  color: darkolivegreen;
+}
+
+#posts-list {
+  display: flex;
+  flex-wrap: wrap;
+}

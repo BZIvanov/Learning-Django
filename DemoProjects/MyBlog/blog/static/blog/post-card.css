@@ -1,0 +1,13 @@
+.post {
+  list-style-type: none;
+  width: 300px;
+}
+
+.post > a {
+  text-decoration: none;
+  color: darkolivegreen;
+}
+
+.post img {
+  border-radius: 10px;
+}

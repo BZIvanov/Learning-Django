@@ -23,6 +23,8 @@ Here is a list of recommended extensions:
 - **Black Formatter** from Microsoft - check the extension description to read how to enable the formatting for python files.
 - **Django** from Baptiste Darthenay - useful, if working with html templates
 
+You can disable js Prettier extension in case you have it.
+
 ## Starting a new project
 
 To start a new project run `django-admin startproject mysite`.
@@ -44,3 +46,7 @@ Django projects are usually a collection of apps that work together to form a co
 ### Create new app
 
 To create a new app run the following command `python manage.py startapp polls`, where _polls_ is the name we want to use for our app.
+
+## HTML Templates
+
+File formatting matters and might result in errors, if our file is uisng for example `extends`, `block`, `endblock`, etc... tempate tags and is bad formatted.

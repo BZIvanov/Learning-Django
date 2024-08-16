@@ -1,0 +1,16 @@
+#post-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: darkolivegreen;
+  text-align: center;
+}
+
+#post-details img {
+  border-radius: 10px;
+}
+
+#post-details .post-content {
+  text-align: left;
+}

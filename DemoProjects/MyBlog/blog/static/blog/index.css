@@ -1,0 +1,22 @@
+#author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#latest-posts > h2 {
+  text-align: center;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: darkolivegreen;
+  color:darksalmon;
+}
+
