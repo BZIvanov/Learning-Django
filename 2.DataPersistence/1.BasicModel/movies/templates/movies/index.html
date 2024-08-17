@@ -1,0 +1,16 @@
+{% extends "movies/base.html" %}
+
+{% block title %}
+  Movies List
+{% endblock %}
+
+{% block content %}
+  <h1>Movies - {{ total_count }}</h1>
+  <h3>Average rating - {{ avg_rating.rating__avg }}</h3>
+
+  <ul>
+    {% for movie in movies %}
+      <li><a href="{{ movie.get_absolute_url }}">{{ movie.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
