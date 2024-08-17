@@ -11,17 +11,11 @@ class Movie(models.Model):
         validators=[MinValueValidator(1), MaxValueValidator(5)]
     )
     is_recent = models.BooleanField(default=False)
-    slug = models.SlugField(default="", null=False, db_index=True)
+    slug = models.SlugField(default="", blank=True, null=False, db_index=True)
 
     # override get_absolute_url method to include the id
     def get_absolute_url(self):
         return reverse("movie-page-name", args=[self.slug])
-
-    # override save method to create a slug on save
-    def save(self, *args, **kwargs):
-        self.slug = slugify(self.title)
-
-        super().save(*args, **kwargs)
 
     def __str__(self):
         return f"{self.title} ({self.rating})"
