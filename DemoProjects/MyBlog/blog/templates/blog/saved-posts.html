@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Read Later posts
+{% endblock %}
+
+
+{% block content %}
+  <section>
+    {% if not has_posts %}
+      <p>You don't have any saved posts to read later.</p>
+    {% endif %}
+
+    <ul>
+      {% for post in posts %}
+        <li>
+          <a href="{% url "post-page-name" post.slug %}">
+            {{ post.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}

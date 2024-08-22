@@ -21,3 +21,11 @@ body {
   font-size: 18px;
   color:darksalmon
 }
+
+#site-navigation .right-menu-items a {
+  margin-left: 12px;
+}
+
+#site-navigation .right-menu-items a:hover {
+  text-decoration: underline;
+}

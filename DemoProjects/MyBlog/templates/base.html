@@ -13,7 +13,10 @@
     <header id="site-header"> 
       <nav id="site-navigation">
         <a href="{% url "index-page-name" %}">My Blog</a>
-        <a href="{% url "posts-page-name" %}">Posts</a>
+        <div class="right-menu-items">
+          <a href="{% url "read-later-name" %}">Read Later</a>
+          <a href="{% url "posts-page-name" %}">Posts</a>
+        </div>
       </nav>
     </header>
 

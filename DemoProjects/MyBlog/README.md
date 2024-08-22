@@ -2,10 +2,31 @@
 
 ## Running the project
 
-Create admin user with the following command `python manage.py createsuperuser`. Start the server with `python manage.py runserver` and visit `http://localhost:8000/admin/`.
+Run the following two commands to generate the migrations and the SQLite database file:
 
-Create the needed data for the website and visit `http://localhost:8000/`.
+```
+python manage.py makemigrations
+python manage.py migrate
+```
 
-## Creating the data
+Create admin user with the following command:
 
-For the image name provide `mountains.png`, which is available in static folder.
+```
+python manage.py createsuperuser
+```
+
+Start the server with the following command:
+```
+python manage.py runserver
+```
+
+and visit `http://localhost:8000/admin/` to create some data and visit `http://localhost:8000/` for our blog site.
+
+
+## Install additional dependencies
+
+Install `Pillow` package, which is used for uploading files.
+
+```
+python -m pip install Pillow
+```

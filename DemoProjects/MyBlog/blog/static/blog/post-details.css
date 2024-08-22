@@ -9,6 +9,8 @@
 
 #post-details img {
   border-radius: 10px;
+  width: 250px;
+  height: 250px;
 }
 
 #post-details .post-content {
@@ -30,4 +32,91 @@
 
 address a {
   color: darkolivegreen;
+}
+
+.errorlist {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+  color: red;
+}
+
+.invalid label {
+  color: red;
+}
+
+.invalid input, .invalid textarea {
+  border-color: red;
+}
+
+#users-comments > h2 {
+  text-align: center;
+  color: darkolivegreen;
+}
+ 
+#users-comments ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#users-comments ul li {
+  list-style: none;
+  color: darksalmon;
+}
+
+#error-banner {
+  text-align: center;
+  color: red;
+}
+
+#error-banner h2 {
+  margin: 4px;
+}
+
+#error-banner a {
+  color: red;
+  font-size: 18px;
+  text-decoration: none;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 4px 8px;
+}
+
+#comment-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#comment-form > h2 {
+  text-align: center;
+  color: darkolivegreen;
+}
+
+#comment-form > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#comment-form > form .form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#comment-form button {
+  margin-top: 12px;
+  cursor: pointer;
+  background-color: darksalmon;
+  padding: 8px 16px;
+}
+
+#read-later button {
+  margin-top: 12px;
+  cursor: pointer;
+  background-color: darkolivegreen;
+  color: darksalmon;
+  padding: 4px 8px;
+  border-radius: 5px;
 }
